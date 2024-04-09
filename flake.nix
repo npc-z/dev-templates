@@ -175,6 +175,11 @@
           description = "Python development environment";
         };
 
+        python39 = {
+          path = ./python39;
+          description = "Python39 development environment";
+        };
+
         ruby = {
           path = ./ruby;
           description = "Ruby development environment";
