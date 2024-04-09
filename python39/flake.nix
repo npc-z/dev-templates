@@ -17,7 +17,7 @@
     devShells = forEachSupportedSystem ({pkgs}: {
       default = pkgs.mkShell {
         packages = with pkgs;
-          [python39 virtualenv]
+          [python39 virtualenv stdenv.cc.cc.lib]
           ++ (with pkgs.python39Packages; [pip]);
       };
     });
